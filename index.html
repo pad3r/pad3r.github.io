@@ -52,15 +52,14 @@
             <span class="author-block">
               <a href="http://songweige.github.io/">Songwei Ge</a><sup>1</sup>&nbsp&nbsp</span>
             <span class="author-block">
-              <a href="https://gengshan-y.github.io/">Gengshan Yang<sup><span style="font-size:0.7em;">&#x2722;</span></sup></a><sup>2</sup>&nbsp&nbsp</span>
+              <a href="https://gengshan-y.github.io/">Gengshan Yang<sup><span style="font-size:0.7em;">&#x2722;</span></sup></a>&nbsp&nbsp</span>
             <span class="author-block">
               <a href="https://jbhuang0604.github.io/">Jia-Bin Huang<sup><span style="font-size:0.7em;">&#x2722;</span></sup></a><sup>1</sup>&nbsp&nbsp</span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Maryland College Park &nbsp&nbsp </span>
-            <span class="author-block"><sup>2</sup>World Labs &nbsp&nbsp </span> </br>
-            <span class="author-block" style="font-size:0.8em;"><sup><span style="font-size:0.7em;">&#x2722;</span></sup>Joint advising. This paper describes work not associated with World Labs. </span>
+            <span class="author-block"><sup>1</sup>University of Maryland College Park &nbsp&nbsp </span> </br>
+            <span class="author-block" style="font-size:0.8em;"><sup><span style="font-size:0.7em;">&#x2722;</span></sup>Joint advising.</span>
           </div>
 
           <h2 class="title is-4 publication-title" style="margin-top: 20px; margin-bottom: 16px;">SIGGRAPH Asia 2025</h1>
@@ -156,6 +155,12 @@
                 <a href="#method"
                    class="external-link button is-normal custom-nav-btn">
                   <span>Method</span>
+                  </a>
+              </span>
+              <span class="link-block">
+                <a href="#view"
+                   class="external-link button is-normal custom-nav-btn">
+                  <span>Varying View Coverage</span>
                   </a>
               </span>
               <span class="link-block">
@@ -340,6 +345,31 @@
   </div>
 </section>
 
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h1 id="view" style="text-align: center; font-size: 30px; font-weight: bold;"> 
+       Robustness Across View Coverage &nbsp; <a style="font-size: 20px; font-weight: normal;" href="#top">&uarr; <span style="font-size: 15px; font-weight: normal;">back to top</span></a></span></h1>
+      
+      <div class="" style="text-align: left; font-size: 18px;">
+        To further assess PAD3R’s capacity to capture camera movements, we analyze how input view coverage affects reconstruction quality. 
+        We evaluate on five input sequences, each providing a different extent of viewpoint variation,  
+        0&deg; (single-view), 40&deg;, 90&deg;, 140&deg; and 180&deg;. </br> 
+
+      PAD3R maintains consistently high reconstruction quality across varying view coverage angles. 
+      In contrast, due to its static camera assumption, DreamMesh4D exhibits a steady decline in performance as the range of viewpoints expands. 
+      Conversely, BANMo shows improved results with broader view coverage, but performs poorly under single-view or narrow-view settings. 
+      <!-- These results underscore the robustness and adaptability of our approach in handling both constrained and dynamic camera motions,  -->
+      <!-- enabling accurate reconstructions under diverse conditions. -->
+      </div>
+      <div id='subsec:vary-view' class="row py-5 mt-5 bg-dark" style="display: flex; justify-content: center; align-items: center;">
+        <img src="static/assets/coverage_plot.svg" style="width: 40%;"/> 
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 <section class="hero is-small">
   <div class="hero-body">
@@ -505,7 +535,7 @@
       </br><small>[1] Yifei Zeng, Yanqin Jiang, Siyu Zhu, Yuanxun Lu, Youtian Lin, Hao Zhu, Weiming Hu, Xun Cao and Yao Yao. STAG4D: Spatial-Temporal Anchored Generative 4D Gaussians. In ECCV, 2024.</small>
       </br><small>[2] Jiawei Ren, Kevin Xie, Ashkan Mirzaei, Hanxue Liang, Xiaohui Zeng, Karsten Kreis, Ziwei Liu, Antonio Torralba, Sanja Fidler, Seung Wook Kim and Huan Ling. L4GM: Large 4D Gaussian Reconstruction Model. In NeurIPS, 2024.</small>
       </br><small>[3] Zhiqi Li, Yiming Chen and Peidong Liu. DreamMesh4D: Video-to-4D Generation with Sparse-Controlled Gaussian-Mesh Hybrid Representation. In NeurIPS, 2024.</small>
-      </br><small>[4] Gengshan Yang, Shuo Yang, John Z. Zhang, Zachary Manchester and Deva Ramanan. BANMo: Building Animatable 3D Neural Models from Many Casual Videos. In CVPR, 2022.</small>
+      </br><small>[4] Gengshan Yang, Minh Vo, Natalia Neverova, Deva Ramanan, Andrea Vedaldi, Hanbyul Joo. BANMo: Building Animatable 3D Neural Models from Many Casual Videos. In CVPR, 2022.</small>
       </div>
 
       <br/><br/>
